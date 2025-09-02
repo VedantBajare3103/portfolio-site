@@ -4,47 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vedant’s Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Vedant’s Portfolio</h1>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="logo">Vedant’s Portfolio</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I’m Vedant 👋</h2>
+      <p>Building innovative solutions with Software, Data & Cloud</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
   <main>
-    <article id="about">
-      <section>
-        <h2>About Me</h2>
-        <p>Hello! I’m Vedant, passionate about software, data, and cloud.</p>
-      </section>
-    </article>
 
-    <article id="projects">
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>Passenger Safety Module</li>
-          <li>Amazon E-Performance Dashboard using Power-Bi</li>
-          <li>Grocery Management System</li>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <article>
+          <p>Hello! I’m Vedant, passionate about creating impactful projects in software, data, and cloud. 
+          I love turning ideas into reality with clean code and creative design.</p>
+        </article>
+      </div>
+    </section>
 
-        </ul>
-      </section>
-    </article>
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">🚀 Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Passenger Safety Module</h3>
+            <p>AI-powered safety & monitoring system for vehicles.</p>
+          </article>
+          <article class="card">
+            <h3>Amazon Dashboard (Power BI)</h3>
+            <p>Performance tracking with interactive analytics.</p>
+          </article>
+          <article class="card">
+            <h3>Grocery Management System</h3>
+            <p>3-tier app with ordering, billing & inventory control.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <article id="contact">
-      <section>
-        <h2>Contact</h2>
-        <p>Email: vedantbajare23@gmail.com</p>
-      </section>
-    </article>
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">📩 Contact</h2>
+        <div class="social-icons">
+          <a href="mailto:vedantbajare23@gmail.com" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vedant-bajare" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <!-- Phone -->
+          <a href="tel:+919876543210" title="Call">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Vedant Bajare</p>
+    <div class="container">
+      <p>&copy; 2025 Vedant Bajare </p>
+    </div>
   </footer>
+
 </body>
 </html>
