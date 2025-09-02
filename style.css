@@ -1,4 +1,3 @@
-/* ---------------- Reset ---------------- */
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +11,12 @@ body {
   color: #333;
 }
 
-/* ---------------- Layout Container ---------------- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* ---------------- Header with Flexbox ---------------- */
 header {
   position: sticky;
   top: 0;
@@ -68,7 +65,6 @@ header .container {
   width: 100%;
 }
 
-/* ---------------- Hero Section ---------------- */
 .hero {
   text-align: center;
   padding: 5rem 1.5rem;
@@ -103,9 +99,12 @@ header .container {
   transform: scale(1.05);
 }
 
-/* ---------------- Sections ---------------- */
 section {
   padding: 3rem 0;
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust this to match header height */
 }
 
 section h2 {
@@ -115,14 +114,12 @@ section h2 {
   font-size: 2rem;
 }
 
-/* ---------------- Projects Grid ---------------- */
 .projects-grid {
   display: grid;
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-/* Cards */
 .card {
   background: white;
   padding: 2rem;
@@ -146,7 +143,41 @@ section h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ---------------- Footer ---------------- */
+/* ✅ Contact Section */
+#contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-info {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.contact-info i {
+  color: #0077b5; /* blue color for icons */
+  margin-right: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0077b5;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -157,14 +188,10 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ---------------- Responsive Layouts ---------------- */
-
-/* Mobile First: default (320px up) */
 .projects-grid {
   grid-template-columns: 1fr;
 }
 
-/* Tablet: 768px and up */
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -179,7 +206,6 @@ footer {
   }
 }
 
-/* Desktop: 1280px and up */
 @media (min-width: 1280px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
